@@ -5,8 +5,7 @@ const b = new Map([
   [2, "two"],
   [4, "four"],
 ]);
-const d = [2 + 2, "hey", a, giveNumber()];
-console.log(d);
-function giveNumber() {
-  return 5;
-}
+const evens = new Set([2, 4, 6, 8]);
+const squares = new Set([1, 4, 9]);
+console.log(evens.union(squares)); // Set(6) { 2, 4, 6, 8, 1, 9 }
+
